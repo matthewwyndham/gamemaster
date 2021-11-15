@@ -15,13 +15,20 @@ def load_brain():
     return brain
 
 # Brain format with defaults
-brain_format = {'nice': 0, 'start': 'wow'}
+brain_format = {
+    'thoughts': [],
+    'goals': [],
+    'memories': []
+}
 brain = load_brain()
 
 # update brain since the last save
 for key in brain_format:
     if not key in brain:
         brain[key] = brain_format[key]
+
+# print(brain)
+# save_brain(brain)
 
 ############################
 # GOALS
