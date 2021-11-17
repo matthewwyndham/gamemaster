@@ -16,9 +16,14 @@ def load_brain():
 
 # Brain format with defaults
 brain_format = {
-    'thoughts': [],
-    'goals': [],
-    'memories': []
+    'perceptions': [], # what is happening in the world?
+    'automations': [], # make things easier by creating routines for circumstances you've seen before
+    'thoughts': [], # now, temporary
+    'goals': [], # future
+    'memories': [], # long/short term, specific experiences
+    'motivation': [], # old, general
+    'actions': [] # how to affect the world
+    # perception -> automations? -> thoughts -> goals / motivations -> memories / automations -> actions
 }
 brain = load_brain()
 
